@@ -1,0 +1,83 @@
+[System]
+Name='zadatak2c'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=25
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+TypeRedMethod='Karnik-Mendel'
+
+[Input1]
+Name='error'
+Range=[-1 1]
+NumMFs=5
+MF1U='NBU':'trapmf',[-1 -1 -0.4 -0.2 1]
+MF1L='NBL':'trapmf',[-1 -1 -0.42 -0.22 1]
+MF2U='NMU':'trapmf',[-0.42 -0.22 -0.18 0 1]
+MF2L='NML':'trimf',[-0.4 -0.2 -0.02 0.9]
+MF3U='ZEU':'trapmf',[-0.2 -0.02 0.02 0.2 1]
+MF3L='ZEL':'trimf',[-0.18 0 0.18 0.9]
+MF4U='PMU':'trapmf',[0 0.18 0.22 0.42 1]
+MF4L='PML':'trimf',[0.02 0.2 0.4 0.9]
+MF5U='PBU':'trapmf',[0.18 0.4 1 1 1]
+MF5L='PBL':'trapmf',[0.22 0.42 1 1 1]
+
+[Input2]
+Name='derivativeError'
+Range=[-1 1]
+NumMFs=5
+MF1U='NBU':'trapmf',[-1 -1 -0.3 -0.1 1]
+MF1L='NBL':'trapmf',[-1 -1 -0.32 -0.12 1]
+MF2U='NMU':'trapmf',[-0.32 -0.12 -0.08 0 1]
+MF2L='NML':'trimf',[-0.3 -0.1 -0.02 0.9]
+MF3U='ZEU':'trapmf',[-0.1 -0.02 0.02 0.1 1]
+MF3L='ZEL':'trimf',[-0.08 0 0.08 0.9]
+MF4U='PMU':'trapmf',[0 0.08 0.12 0.32 1]
+MF4L='PML':'trimf',[0.02 0.1 0.3 0.9]
+MF5U='PBU':'trapmf',[0.08 0.3 1 1 1]
+MF5L='PBL':'trapmf',[0.12 0.32 1 1 1]
+
+[Output1]
+Name='output1'
+CrispInterval='interval'
+Range=[-1 1]
+NumMFs=7
+MF1='NB':'constant',[-0.98 -1]
+MF2='NM':'constant',[-0.58 -0.6]
+MF3='NS':'constant',[-0.03 -0.05]
+MF4='ZE':'constant',[0.01 -0.01]
+MF5='PS':'constant',[0.05 0.03]
+MF6='PM':'constant',[0.6 0.58]
+MF7='PB':'constant',[1 0.98]
+
+[Rules]
+1 1, 1 (1) : 1
+1 2, 1 (1) : 1
+1 3, 2 (1) : 1
+1 4, 4 (1) : 1
+1 5, 4 (1) : 1
+2 1, 1 (1) : 1
+2 2, 2 (1) : 1
+2 3, 3 (1) : 1
+2 4, 4 (1) : 1
+2 5, 5 (1) : 1
+3 1, 2 (1) : 1
+3 2, 3 (1) : 1
+3 3, 4 (1) : 1
+3 4, 5 (1) : 1
+3 5, 6 (1) : 1
+4 1, 3 (1) : 1
+4 2, 4 (1) : 1
+4 3, 4 (1) : 1
+4 4, 6 (1) : 1
+4 5, 7 (1) : 1
+5 1, 4 (1) : 1
+5 2, 4 (1) : 1
+5 3, 5 (1) : 1
+5 4, 7 (1) : 1
+5 5, 7 (1) : 1

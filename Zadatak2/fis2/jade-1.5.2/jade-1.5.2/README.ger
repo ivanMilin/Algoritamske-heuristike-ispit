@@ -1,0 +1,28 @@
+JADE - README Datei deutsch
+===========================
+
+Kurzinstallationsanweisung:
+---------------------------
+
+> 'java developer edition' oder 'java runtime edition' Version 1.2 (oder
+  neuer) installieren.
+
+> Das Paket enthaelt folgende Dateien:
+
+  - README.ger
+  - README.eng
+  - OBDDApp.jar
+  - LICENSE
+  - JADE-Win32.bat
+  - JADE-Unix
+  (weitere Details zu den Dateien in Datei LICENSE.)
+
+> UNIX/Linux Benutzer muessen nun  mit 'chmod +x JADE-Unix' das Startscript
+  'executable' setzen (entfaellt unter Win32) und mit './JADE-Unix' starten.
+  Getestet wurde das Aufrufen des Skriptes aus der shell tcsh. 
+  Andere shells sollten aber ebenfalls funktionieren. 
+  Bei Win32: einfach starten mit 'JADE-Win32' 
+
+--------------------------------------------------------------
+Copyright (C) 2002 Albert-Ludwigs-University Freiburg, Germany
+--------------------------------------------------------------

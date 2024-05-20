@@ -1,0 +1,33 @@
+LICENSE AGREEMENT & COPYRIGHT
+=============================
+
+Copyright (C) 2002 Albert-Ludwigs-University Freiburg, Germany
+
+This software is intellectual property of the
+Albert-Ludwigs-University, Germany.
+
+Use at your own risk!
+In no event shall the Albert-Ludwigs-University Freiburg
+or the author be liable for any damages whatsoever 
+(including without limitation damages for loss of
+business profits, business interruption, 
+loss of business information, or any other pecuniary loss)
+arising from the use of or inability to 
+use the Software, even if the Albert-Ludwigs-University Freiburg
+has been advised of the possibility of such damages.
+
+Distribution
+You can freely redistritbute this software as long as
+all files are included. The files in this package are
+
+	README.ger	German readme file
+	README.eng	English readme file
+	OBDDApp.jar	compressed JAVA class & image archive
+	OBDDApp.conf	configuration file
+	LICENSE		This file (License Agreement & Copyright)
+	JADE-Win32.bat	Win32 startup script file
+	JADE-Unix	UNIX/LINUX startup script file
+
+--------------------------------------------------------------
+(c) Copyright 2002 Albert-Ludwigs-University Freiburg, Germany
+--------------------------------------------------------------

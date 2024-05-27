@@ -12,16 +12,16 @@
 %     along with IT2-FLS Toolbox.  If not, see <http://www.gnu.org/licenses/>.
 %% Simulation parameters
 t2fisSim = readt2fis('zadatak2c.t2fis');
-Ke=1;
-Kd=0.5141;
-Ka=0.077;
-Kb=7.336;
-SamplingTime=0.05;
+Ke=5.2;
+Kd=0.01/6;
+Ka=0.0002/6;
+Kb=4;
+SamplingTime=0.01;
 
 %% System parameters
-K=1;
-T=1.1;
-L=0.3;
+K=1.8;
+T=0.1;
+L=0.1;
 
 open_system('IT2_FPID_Controller.slx')
 T2Controller=find_system('IT2_FPID_Controller','name',...
